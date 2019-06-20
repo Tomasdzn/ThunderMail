@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ThunderMail.jnlp">
+  <information>
+    <title>ThunderMail</title>
+    <vendor>tomas.siquier</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ThunderMail.jar" size="36490" download="eager" />
+    <jar href="lib\jackson-core-2.9.9.jar" size="325632" download="eager" />
+    <jar href="lib\jackson-databind-2.9.9.jar" size="1348108" download="eager" />
+    <jar href="lib\json-simple-1.1.1.jar" size="23931" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ThunderMail" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="thundermail.ThunderMail"  name="ThunderMail" />
+  <update check="always"/>
+</jnlp>

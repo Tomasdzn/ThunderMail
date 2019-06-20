@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="paneAcnhor" prefHeight="260.0" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thundermail.FXMLDocumentController">
+    <children>
+      <TextField fx:id="txtUser" focusTraversable="false" layoutX="32.0" layoutY="101.0" prefHeight="36.0" prefWidth="257.0" promptText="Username" style="-fx-focus-traversable: false;" />
+      <Button fx:id="btnLogin" layoutX="68.0" layoutY="207.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="89.0" style="-fx-focus-traversable: false;" text="Login">
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Label layoutX="32.0" layoutY="47.0" prefHeight="25.0" prefWidth="257.0" text="ThunderMail">
+         <font>
+            <Font name="Verdana Bold" size="21.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPass" focusTraversable="false" layoutX="32.0" layoutY="150.0" prefHeight="36.0" prefWidth="257.0" promptText="Password" style="fx-focus-traversable: false;" />
+      <Label fx:id="lblStatus" layoutX="14.0" layoutY="232.0" />
+      <Button fx:id="btnRegister" layoutX="163.0" layoutY="207.0" mnemonicParsing="false" onAction="#register" prefHeight="25.0" prefWidth="89.0" style="-fx-focus-traversable: false;" text="Register">
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Button fx:id="btnClose" focusTraversable="false" layoutX="266.0" layoutY="8.0" mnemonicParsing="false" onAction="#exit" text="Close" />
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="188.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/icon.jpg" />
+         </image>
+         <effect>
+            <DropShadow color="#0000002d" height="10.0" offsetX="1.0" offsetY="1.0" radius="4.5" spread="0.37" width="10.0" />
+         </effect>
+      </ImageView>
+    </children>
+</AnchorPane>
